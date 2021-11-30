@@ -15,7 +15,6 @@
     "require": "./dist/react-lit-skip-nav.cjs",
     "import": "./dist/react-lit-skip-nav.modern.js"
   },
-  "types": "dist/index.d.ts",
   "files": [
     "dist",
     "LICENSE"
