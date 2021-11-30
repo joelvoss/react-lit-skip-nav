@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { render } from './test-utils';
-import { axe } from 'jest-axe';
 
 import { SkipNavLink, SkipNavContent } from '../src/index';
 
@@ -32,7 +31,7 @@ describe('<SkipNavLink />', () => {
 
 	it('should not have ARIA violations', async () => {
 		let { container } = render(<Layout />);
-		expect(await axe(container)).toHaveNoViolations();
+		await expect(container).toHaveNoAxeViolations();
 	});
 
 	it('should render proper HTML', () => {
