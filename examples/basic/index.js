@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { SkipNavLink, SkipNavContent } from '../../src/index';
 
 export function Example() {
